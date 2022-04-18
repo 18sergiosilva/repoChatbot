@@ -1,0 +1,16 @@
+
+@import "../../../theme/variables.scss";
+
+ion-content {
+  
+  --background: #fff url("../../../assets/img/fondo_chatbot.svg") no-repeat left top/cover fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // --padding-bottom:15px;
+  // --padding-end:15px;
+  // --padding-start:15px;
+  // --padding-top:20px;
+
+}

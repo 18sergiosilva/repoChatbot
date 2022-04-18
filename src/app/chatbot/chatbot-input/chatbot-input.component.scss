@@ -1,0 +1,37 @@
+.fondo-input{
+    background-color: #FFFF;
+   
+}
+
+ion-textarea {
+    padding: 0px 8px 0px 8px;
+    margin: 5px 5px 5px 5px;
+    border-radius:20px;
+    // border: 1px solid black;
+}
+ion-textarea {
+    // border: 1px solid black;
+    padding: 1px 8px 2px 8px;;
+    margin: 7px 0px 7px 7px;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+.icon-send {
+    width: 20px;
+}
+
+// .icon-send {
+//     // color: #FFFF;
+//     width: 70%;
+//     height: 70%;
+// }
+
+
+.boton-envio{
+    --background: green;
+    margin-right:5px;
+    height: 45px;
+    width: 45px;
+
+}

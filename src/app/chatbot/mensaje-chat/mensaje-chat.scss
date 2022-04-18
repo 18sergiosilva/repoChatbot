@@ -1,0 +1,78 @@
+@import "../../../theme/variables.scss";
+
+//Atributos generales 
+
+.grid-mensaje{
+    padding: 4px 0px 4px 0px;
+    font-size: 0.9rem;
+    opacity: 1;
+ }
+
+//Estilos de mensaje Usuario 
+
+.fondo-mensaje-verde { //---- Fondo verde para mensajes (se aplica a la columna)
+    padding: 0px;                                   //Separacion entre caja y contenido
+    border-radius:10px 0px 10px 10px;               //Bordes redondeados y uno cuadrado
+    background: green;    //Color de fondo
+   
+  }
+  
+  .white-text {          //----- Contenedor con el texto a presentarse en color blanco
+    color: white;           //Color letra
+    margin: 10px;              //Espacio entre el texto y el borde del mensaje                                                 
+  }
+
+  .time-user {           //---- Hora mostrada en mensajes enviados por el usuario
+    color: gray; //Color de letra
+    float: right;                          
+    font-size: x-small;
+    margin: 0px 8px 4px 0px;
+  }
+
+ 
+//Estilos de mensaje bot
+
+  .fondo-mensaje-blanco { //---- Fondo blanco para mensajes (Se aplica a la columna)
+    padding: 0px;                                       //Separacion entre caja y contenido
+    border-radius:0px 10px 10px 10px;                   //Bordes redondeados y uno cuadrado
+    background: white;                                //Color de fondo
+    border: 1px solid lightgreen;  //Borde mensaje
+  }
+
+    .dark-gray-text{    //--- Contenedor con el texto a presentarse en color gris oscuro
+        color: gray;           //Color de letra
+        margin: 10px;
+    }
+
+    .time-bot {                 //---- Hora mostrada en mensajes enviados por el bot
+        color:lightgreen;
+        float: right;
+        font-size: x-small;
+        margin: 0px 8px 4px 0px;
+      }
+
+
+      .green-text {
+        color: lightgreen;
+        margin: 15px;
+      }
+
+      .formatoTablaDosColumnas { //-- Estilo aplicado a tabla de dos columnas
+        margin: 15px;
+        padding: 0px;
+        ion-col:last-child{
+          text-align: right;
+          padding-right: 0px;
+        }
+        ion-col:first-child{
+          text-align: left;
+          font-weight: bolder;
+          padding-left: 0px;
+        }
+    }
+
+
+
+  
+
+

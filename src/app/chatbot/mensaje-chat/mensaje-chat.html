@@ -1,0 +1,40 @@
+<ion-grid class="grid-mensaje">
+  <ion-row>
+  <ion-col class="fondo-mensaje-blanco" size="9" *ngIf="message.type==='bot-text'" >
+      <div class="dark-gray-text">
+        <span>{{ message.msg }}</span>
+      </div>
+      <div class="time-bot" >
+        {{ message.date | date:'shortTime' }}
+      </div>
+    </ion-col>
+   
+    <ion-col class="fondo-mensaje-blanco" size="12" size-md="6" *ngIf="message.type === 'bot-text-table'" >
+      
+    <div class="green-text">
+    <span>{{ message.msg }}</span>
+    </div>
+      <ion-grid class="formatoTablaDosColumnas">
+        <ion-row  *ngFor="let row of message.table;">
+          <ion-col *ngFor="let cell of row; index as j">
+            {{row[j]}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <div class="time-bot" >
+        {{ message.date | date:'shortTime' }}
+      </div>
+    
+    </ion-col> 
+
+    <ion-col class="fondo-mensaje-verde" [offset]="12-message.size" [size]="message.size" *ngIf="message.type === 'user-text'" >
+      <div class="white-text">
+      <span>{{ message.msg }}</span>
+      </div>
+      <div class="time-user" >
+        {{ message.date | date:'shortTime' }}
+      </div>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>

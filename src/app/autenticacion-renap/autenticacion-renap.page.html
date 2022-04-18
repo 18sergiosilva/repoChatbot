@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Autenticacion RENAP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col width-10>
+      <img *ngIf="imgSrcSelf !== ''" class="img-selfie" src="{{imgSrcSelf}}">
+    </ion-col>
+  </ion-row>
+
+  <ion-button (click)="onLaunchSelphiProcess()">SELFIE</ion-button>
+
+</ion-content>

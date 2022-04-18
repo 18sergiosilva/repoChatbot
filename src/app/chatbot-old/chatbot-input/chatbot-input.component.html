@@ -1,0 +1,14 @@
+
+<ion-row class="ion-align-items-center">
+  <ion-textarea placeholder="Escribe algo" [rows]="1" [(ngModel)]="txtInput"></ion-textarea>
+  <ion-fab-button class="ion-activatable" size="small" color="success">
+    <ion-icon *ngIf="txtInput.trim()!==''" name="send" class="icon-send"></ion-icon>
+    <ion-icon *ngIf="txtInput.trim()===''" name="mic"></ion-icon>
+  </ion-fab-button>
+</ion-row>
+
+<!-- <ion-row class="ion-justify-content-center">
+  <ion-fab-button class="ion-activatable" color="success" size="small">
+    <ion-icon name="mic"></ion-icon>
+  </ion-fab-button>
+</ion-row> -->

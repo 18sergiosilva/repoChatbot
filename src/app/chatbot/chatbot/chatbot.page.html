@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>chatbot</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content  id="content">
+
+  <app-mensaje-chat *ngFor="let message of messages" [message]="message" ></app-mensaje-chat>
+  <!-- <ion-col size="9" *ngIf="message.type==='bot-text'" >
+    <div class="message bot-text">
+    <span>{{ message.msg }}</span>
+    </div>
+    <div class="time-bot" >
+      {{ message.date | date:'shortTime' }}
+    </div>
+  </ion-col>
+
+  <ion-col size="12" size-md="6" *ngIf="message.type === 'bot-text-table'" >
+    <div class="message bot-text-table">
+    <span class="green-text">{{ message.msg }}</span>
+    <ion-grid class="formatoTabla">
+      <ion-row  *ngFor="let row of message.table;">
+        <ion-col *ngFor="let cell of row; index as j">
+          {{row[j]}}
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+    </div>
+    <div class="time-bot" >
+      {{ message.date | date:'shortTime' }}
+    </div>
+  </ion-col>
+
+
+  <ion-col offset="3" size="9" *ngIf="message.type === 'user-text'" >
+    <div class="message user-text">
+    <span>{{ message.msg }}</span>
+    </div>
+    <div class="time-user" >
+      {{ message.date | date:'shortTime' }}
+    </div>
+  </ion-col>
+-->
+
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <app-chatbot-input (eventoTexto)="enviarMensajeTexto($event)"></app-chatbot-input>
+  </ion-toolbar>
+</ion-footer>
